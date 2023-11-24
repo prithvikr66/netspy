@@ -6,7 +6,7 @@ const PORT = 4500;
 app.get('/api/flag1',(req,res)=>{
     res
     .set({
-        "First-Part-of-the-flag": "flag1",
+        "First-Part-of-the-flag": "FlAG_1_HERE",
          "Hint-For-Last-Part-Of-Flag": "focus on the api endpoint"
     })
     .status(200)

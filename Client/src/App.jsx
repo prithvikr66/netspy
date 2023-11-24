@@ -46,7 +46,7 @@ function App() {
         {/* <!-- Hehe , I knew this would be the first place you'd come --> */}
         <div className=" w-full flex items-center justify-center flex-col font-Poppins font-bold mt-16">
           <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif"
-            alt="haha"
+            alt="https://netspy-server.vercel.app/api/flag1"
             className=" w-80 mx-auto"
           />
         <div className=" mt-8 flex flex-col gap-3">
