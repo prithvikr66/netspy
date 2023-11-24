@@ -9,6 +9,7 @@ app.get('/api/flag1',(req,res)=>{
         "First-Part-of-the-flag": "FlAG_1_HERE",
          "Hint-For-Last-Part-Of-Flag": "focus on the api endpoint"
     })
+    .setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
     .status(200)
     .json({
         succes:true,
@@ -18,6 +19,7 @@ app.get('/api/flag1',(req,res)=>{
 app.get('/api/flag2',(req,res)=>{
     res
        .header("Final-Part-Of-The-Flag", "flag2")
+       .setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
        .status(200)
        .json({
         success:true,
