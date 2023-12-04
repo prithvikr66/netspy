@@ -2,11 +2,12 @@ import express from "express";
 import cors from "cors";
 const app = express();
 const PORT = 4500;
+// ritCTF{_1cy_penguin_j0y_}
 
 app.get('/api/flag/1',(req,res)=>{
     res.set({
-        "First-Part-of-the-flag": "FlAG_1_HERE",
-         "Hint-For-Last-Part-Of-Flag": "focus on the api endpoint"
+        "First-Part-of-the-flag": "ritCTF{_1cy_pen",
+         
     })
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
     res.removeHeader("Etag")
@@ -16,13 +17,14 @@ app.get('/api/flag/1',(req,res)=>{
     })
 })
 app.get('/api/flag/2',(req,res)=>{
-    res.header("Final-Part-Of-The-Flag", "flag2")
+    res.header("Final-Part-Of-The-Flag", "guin_j0y_}")
        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
        res.removeHeader("Etag")
        res.status(200).json({
         success:true,
         message:"You are just one step away from getting your final part of the flag"
        })
+   
        
 });
 
