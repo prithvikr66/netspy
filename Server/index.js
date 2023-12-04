@@ -17,8 +17,9 @@ app.get('/api/flag/1',(req,res)=>{
     })
 })
 app.get('/api/flag/2',(req,res)=>{
-    res.header("Final-Part-Of-The-Flag", "guin_j0y_}")
+   
        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
+       res.cookie("Final-Part-of-the-Flag","guin_j0y_",360000000)
        res.removeHeader("Etag")
        res.status(200).json({
         success:true,
