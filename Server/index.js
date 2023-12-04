@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 const app = express();
 const PORT = 4500;
-// ritCTF{_1cy_penguin_j0y_}
+
 
 app.get('/api/flag/1',(req,res)=>{
     res.set({
@@ -17,9 +17,9 @@ app.get('/api/flag/1',(req,res)=>{
     })
 })
 app.get('/api/flag/2',(req,res)=>{
-   
+       res.set({"Flag":"Not here this time"})
        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
-       res.cookie("Final-Part-of-the-Flag","guin_j0y_",360000000)
+       res.cookie("Final-Part-of-the-Flag","guin_j0y_}",600)
        res.removeHeader("Etag")
        res.status(200).json({
         success:true,
