@@ -8,7 +8,7 @@ const PORT = 4500;
 app.get('/api/flag/1',(req,res)=>{
     res.set({
         "First-Part-of-the-flag": "ritCTF{_1cy_pen",
-        "Hint-for-the-final-part-of-the-flag": "Focus on the api endpoint url"
+        
          
     })
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
